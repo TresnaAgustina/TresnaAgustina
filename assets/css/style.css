@@ -270,7 +270,7 @@ button,input{
       width: 20px;
       height: 30px;
       top: 20% !important;
-      left: 35% !important;
+      left: 40% !important;
       background: url("../img/shape3.svg") 0% 100% / cover no-repeat;
 }
 
@@ -296,7 +296,7 @@ button,input{
       position: absolute;
       width: 20px;
       height: 20px;
-      top: 40% !important;
+      top: 50% !important;
       left: 80% !important;
       background: url("../img/shape6.svg") 0% 100% / cover no-repeat;
 }
