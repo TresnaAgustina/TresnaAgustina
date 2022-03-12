@@ -293,8 +293,8 @@ button,input{
       position: inherit;
       width: 20px;
       height: 20px;
-      top: 85% !important;
-      left: 10% !important;
+      top: 90% !important;
+      left: 20% !important;
       background: url("../img/shape5.svg") 0% 100% / cover no-repeat;
 }
 
