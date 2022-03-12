@@ -178,14 +178,20 @@ button,input{
 
 .name{
       color: var(--p_color);
-      font-size: var(--h1);
+      font-size: var(--h2);
 }
 
 .profession{
-      font-size: var(--h5);
+      font-size: var(--h6);
       color: var(--bg_color);
       text-align: center;
       margin-top: 4px;
+      font-weight: var(--lig);
+}
+
+.profession > span{
+      font-weight: var(--semi);
+      color: #fff;
 }
 
 .social__icon{
