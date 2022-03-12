@@ -168,7 +168,6 @@ button,input{
       display: flex;
       flex-direction: column;
       align-items: center;
-      z-index: auto;
 }
 
 .name{
