@@ -296,7 +296,7 @@ button,input{
       position: absolute;
       width: 20px;
       height: 20px;
-      top: 50% !important;
+      top: 40% !important;
       left: 80% !important;
       background: url("../img/shape6.svg") 0% 100% / cover no-repeat;
 }
