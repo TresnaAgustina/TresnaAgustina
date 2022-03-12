@@ -180,13 +180,14 @@ button,input{
 .name{
       color: var(--p_color);
       font-size: var(--h2);
+      letter-spacing: 2px;
 }
 
 .profession{
       font-size: var(--h6);
       color: var(--bg_color);
       text-align: center;
-      margin-top: 4px;
+      margin-top: 8px;
       font-weight: var(--lig);
 }
 
@@ -200,7 +201,7 @@ button,input{
       display: flex;
       align-items: center;
       justify-content:space-around;
-      margin: 24px 0 32px 0;
+      margin: 28px 0 38px 0;
 }
 
 .social__icon > i{
@@ -276,7 +277,7 @@ button,input{
       position: absolute;
       width: 20px;
       height: 30px;
-      top: 20% !important;
+      top: 15% !important;
       left: 40% !important;
       background: url("../img/shape3.svg") 0% 100% / cover no-repeat;
 }
@@ -312,7 +313,7 @@ button,input{
       position: absolute;
       width: 20px;
       height: 20px;
-      top: 15% !important;
+      top: 20% !important;
       left: 10% !important;
       background: url("../img/shape7.svg") 0% 100% / cover no-repeat;
 }
