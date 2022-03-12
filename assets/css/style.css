@@ -261,7 +261,7 @@ button,input{
       width: 20px;
       height: 20px;
       top: 10% !important;
-      left: 70% !important;
+      left: 80% !important;
       background: url("../img/shape2.svg") 0% 100% / cover no-repeat;
 }
 
@@ -269,8 +269,8 @@ button,input{
       position: absolute;
       width: 20px;
       height: 30px;
-      top: 15% !important;
-      left: 55% !important;
+      top: 20% !important;
+      left: 35% !important;
       background: url("../img/shape3.svg") 0% 100% / cover no-repeat;
 }
 
