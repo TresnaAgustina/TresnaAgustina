@@ -1,0 +1,335 @@
+/* import font family */
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500;600&display=swap');
+
+/* Base */
+*{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+html{
+      scroll-behavior: smooth;
+}
+
+
+a,ul,ol,li{
+      list-style: none;
+      text-decoration: none;
+}
+
+button,input{
+      outline: none;
+}
+
+/* Variable */
+:root{
+      /* color */
+      --hbg_color: radial-gradient(50% 50% at 50% 50%, #302657 0%, #2E2749 100%);
+      --bg_color: #FBFAFF;
+      --p_color: #E8495E;
+      --t_color: #2B2933;
+
+      /* font */
+      --h1: 2.25rem; /*36px*/
+      --h2: 1.75rem; /*28px*/
+      --h3: 1.5rem; /*24px*/
+      --h4: 1.375rem; /*22px*/
+      --h5: 1.125rem; /*18px*/
+      --h6: 0.875rem; /*14px*/
+      --p: 0.75rem; /*12px*/
+
+      /* weight */
+      --semi: 600;
+      --med: 500;
+      --reg: 400;
+      --lig: 300;
+
+      /* shadow */
+      --project_card_shadow: 0px 14px 29px -14px rgba(45, 45, 45, 0.25);
+      --testi_card_shadow: 0px 2px 29px -14px rgba(45, 45, 45, 0.25);
+
+}
+
+
+/* Navbar */
+.nav__container {
+      width: 100%;
+      height: 70px;
+      display:flex;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      background: var(--hbg_color);
+      border-bottom: 1px solid var(--p_color);
+      z-index: 1;
+}
+
+.navbar{
+      width: 95%;
+      display: flex;
+      align-items: center;
+}
+
+.nav__toggle > i{
+      font-size: var(--h4);
+      font-weight: var(--semi);
+      color: var(--bg_color);
+      cursor: pointer;
+}
+
+.hidden__menu{
+      position: fixed;
+      display: block;
+      width: 50%;
+      height: 100vh;
+      top: 0;
+      left: -50%;
+      background: rgba(107, 107, 107, 0.2);
+      backdrop-filter: blur(5px);
+      transition: .3s ease-in-out;
+      z-index: 100;
+}
+
+.hidden__container{
+      width: 90%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+}
+
+.nav__header{
+      position: absolute;
+      width: 100%;
+      height: 70px;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 12px;
+      background: var(--hbg_color);
+
+}
+
+.nav__items{
+      display: inherit;
+      flex-direction: column;
+      row-gap: 1.5rem;
+}
+
+.hidden__menu.open{
+      left: 0;
+      transition: .3s ease-in-out;
+}
+
+.close__toggle > i{
+      color: var(--bg_color);
+      font-size: var(--h5);
+      cursor: pointer;
+}
+
+.nav__link > a{
+      color: var(--bg_color);
+      font-size: var(--h5);
+}
+
+.nav__logo{
+      font-size: var(--h4);
+      color: var(--bg_color);
+}
+
+.nav__link > a:hover, .close__toggle > i:hover{
+      color: var(--p_color);
+      transition: .2s ease-in-out;
+}
+
+/* Hero */
+.hero__section{
+      width: 100%;
+      height: 100vh;
+      background: var(--hbg_color);
+      overflow: hidden;
+}
+
+.hero__container{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.hero__content{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: auto;
+}
+
+.name{
+      color: var(--p_color);
+      font-size: var(--h1);
+}
+
+.profession{
+      font-size: var(--h5);
+      color: var(--bg_color);
+      text-align: center;
+      margin-top: 4px;
+}
+
+.social__icon{
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content:space-around;
+      margin: 24px 0 32px 0;
+}
+
+.social__icon > i{
+      color: var(--bg_color);
+      text-align: center;
+      font-size: var(--h4);
+      transition: .3s ease-in-out;
+}
+
+.social__icon > i:hover{
+      color: var(--p_color);
+      cursor: pointer;
+      transition: .3s ease-in-out;
+}
+
+.hire__button{
+      padding: 12px 18px;
+      background: var(--p_color);
+      border: none;
+      font-size: var(--h6);
+      border-radius: 5px;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: .2s ease-in-out;
+}
+
+.hire__button:hover{
+      background: #cc2b41;
+      padding: 12px 24px;
+      transition: .3s ease-in-out;
+}
+
+.hire__button:hover > a{
+      color: #fff;
+}
+
+.hire__button > a{
+      color: var(--bg_color);
+}
+
+.parallax{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform: translate3d(0px, 0px, 0px) rotate(0.0001deg);
+      transform-style: preserve-3d;
+      backface-visibility: hidden;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: auto;
+
+}
+
+.object1{
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 80% !important;
+      left: 60% !important;
+      background: url("../img/shape1.svg") 0% 100% / cover no-repeat;
+}
+
+.object2{
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      top: 5% !important;
+      left: 70% !important;
+      background: url("../img/shape2.svg") 0% 100% / cover no-repeat;
+}
+
+.object3{
+      position: absolute;
+      width: 30px;
+      height: 40px;
+      top: 15% !important;
+      left: 55% !important;
+      background: url("../img/shape3.svg") 0% 100% / cover no-repeat;
+}
+
+.object4{
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      top: 70% !important;
+      left: 15% !important;
+      background: url("../img/shape4.svg") 0% 100% / cover no-repeat;
+}
+
+.object5{
+      position: inherit;
+      width: 40px;
+      height: 40px;
+      top: 85% !important;
+      left: 10% !important;
+      background: url("../img/shape5.svg") 0% 100% / cover no-repeat;
+}
+
+.object6{
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      top: 40% !important;
+      left: 80% !important;
+      background: url("../img/shape6.svg") 0% 100% / cover no-repeat;
+}
+
+.object7{
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      top: 15% !important;
+      left: 10% !important;
+      background: url("../img/shape7.svg") 0% 100% / cover no-repeat;
+}
+
+.object8{
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      top: 35% !important;
+      left: 5% !important;
+      background: url("../img/shape8.svg") 0% 100% / cover no-repeat;
+}
+
+.object9{
+      position: absolute;
+      width: 50px;
+      height: 40px;
+      top: 90% !important;
+      left: 80% !important;
+      background: url("../img/shape9.svg") 0% 100% / cover no-repeat;
+}
+
+.object10{
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      top: 25% !important;
+      left: 75% !important;
+      background: url("../img/shape10.svg") 0% 100% / cover no-repeat;
+}
+
+
