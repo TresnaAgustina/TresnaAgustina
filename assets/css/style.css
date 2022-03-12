@@ -253,9 +253,9 @@ button,input{
 
 .object2{
       position: absolute;
-      width: 40px;
-      height: 40px;
-      top: 5% !important;
+      width: 30px;
+      height: 30px;
+      top: 10% !important;
       left: 70% !important;
       background: url("../img/shape2.svg") 0% 100% / cover no-repeat;
 }
@@ -280,8 +280,8 @@ button,input{
 
 .object5{
       position: inherit;
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
       top: 85% !important;
       left: 10% !important;
       background: url("../img/shape5.svg") 0% 100% / cover no-repeat;
@@ -289,8 +289,8 @@ button,input{
 
 .object6{
       position: absolute;
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
       top: 40% !important;
       left: 80% !important;
       background: url("../img/shape6.svg") 0% 100% / cover no-repeat;
@@ -298,8 +298,8 @@ button,input{
 
 .object7{
       position: absolute;
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
       top: 15% !important;
       left: 10% !important;
       background: url("../img/shape7.svg") 0% 100% / cover no-repeat;
@@ -307,8 +307,8 @@ button,input{
 
 .object8{
       position: absolute;
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
       top: 35% !important;
       left: 5% !important;
       background: url("../img/shape8.svg") 0% 100% / cover no-repeat;
@@ -316,8 +316,8 @@ button,input{
 
 .object9{
       position: absolute;
-      width: 50px;
-      height: 40px;
+      width: 30px;
+      height: 20px;
       top: 90% !important;
       left: 80% !important;
       background: url("../img/shape9.svg") 0% 100% / cover no-repeat;
@@ -325,8 +325,8 @@ button,input{
 
 .object10{
       position: absolute;
-      width: 40px;
-      height: 40px;
+      width: 30px;
+      height: 30px;
       top: 25% !important;
       left: 75% !important;
       background: url("../img/shape10.svg") 0% 100% / cover no-repeat;
