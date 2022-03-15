@@ -24,7 +24,21 @@ toggle.onclick = function () {
       menu.classList.remove('open')
   }
   navLink.forEach(n => n.addEventListener('click', linkClick))
-  
+
+// typer
+var message = ["Front End Developer"];
+var textPositions = 0;
+var speed = 105;
+
+typewriter = () => {
+    document.querySelector('#profession').innerHTML = message[0].substring(0, textPositions)
+        + "<span>\u25ae</span>";
+    
+    if (textPositions++ != message[0].length)
+        setTimeout(typewriter, speed);
+}
+
+window.addEventListener("load", typewriter);
   
 //   // change navbar background while scroll
 //   function scrollHeader(){
