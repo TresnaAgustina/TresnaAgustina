@@ -25,6 +25,7 @@ toggle.onclick = function () {
   }
   navLink.forEach(n => n.addEventListener('click', linkClick))
 
+
 // typer
 var message = ["Front End Developer"];
 var textPositions = 0;
@@ -40,11 +41,19 @@ typewriter = () => {
 
 window.addEventListener("load", typewriter);
   
-//   // change navbar background while scroll
-//   function scrollHeader(){
-//       const header = document.getElementById('header')
-//       // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
-//       if(this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
-//   }
-//   window.addEventListener('scroll', scrollHeader)
 
+
+  // change navbar background while scroll
+  function scrollHeader(){
+      const header = document.getElementById('navbar')
+      // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
+      if(this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+  }
+  window.addEventListener('scroll', scrollHeader)
+
+  function scrollSideBar(){
+    const header = document.getElementById('sidebar')
+    // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
+    if(this.scrollY >= 200) header.classList.add('scroll-sidebar'); else header.classList.remove('scroll-sidebar')
+}
+window.addEventListener('scroll', scrollSideBar)

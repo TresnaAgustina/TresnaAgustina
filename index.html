@@ -3,7 +3,7 @@
 <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">  
       <!-- my css -->
       <link rel="stylesheet" href="assets/css/style.css">
       <!-- font awesome -->
@@ -14,23 +14,23 @@
 </head>
 <body>
       <!-- Navbar -->
-      <section class="nav__container">
-            <nav class="navbar">
+      <section class="nav__container" id="navbar">
+            <nav class="navbar" >
                   <div class="nav__toggle">
                         <i class="fas fa-bars menu__toggle"></i>
                   </div>
 
                   <div class="desktop__menu">
                         <div class="nav__menu">
-                              <li class="nav__list"><a href="#">Home</a></li>
-                              <li class="nav__list"><a href="#">About</a></li>
+                              <li class="nav__list"><a href="#home">Home</a></li>
+                              <li class="nav__list"><a href="#about">About</a></li>
                               <li class="nav__list"><a href="#">Service</a></li>
                               <li class="nav__list"><a href="#">Project</a></li>
                               <li class="nav__list"><a href="#">Contact</a></li>
                         </div>
                   </div>
 
-                  <div class="hidden__menu">
+                  <div class="hidden__menu" id="sidebar">
                         <div class="nav__header" aria-hidden="false">
                               <a href="#" class="nav__logo">Tresna</a>
                               <div class="close__toggle">
@@ -39,8 +39,8 @@
                         </div>
                         <div class="hidden__container">
                               <ul class="nav__items">
-                                    <li class="nav__link"><a href="#" class="link">Home</a></li>
-                                    <li class="nav__link"><a href="#" class="link">About</a></li>
+                                    <li class="nav__link"><a href="#home" class="link">Home</a></li>
+                                    <li class="nav__link"><a href="#about" class="link">About</a></li>
                                     <li class="nav__link"><a href="#" class="link">Service</a></li>
                                     <li class="nav__link"><a href="#" class="link">Project</a></li>
                                     <li class="nav__link"><a href="#" class="link">Contact</a></li>
@@ -54,7 +54,7 @@
             <div class="hero__container">
                   <div class="hero__content">
                         <div class="profile">
-                              <img src="assets/img/profile.png" alt="" class="profile__image">
+                              <img src="assets/img/profile.png" alt="User Profile" class="profile__image">
                         </div>
                         <div class="information">
                               <h1 class="name">Tresna Agustina</h1>
@@ -89,6 +89,23 @@
             </div>
       </section>
       <!-- About -->
+      <div class="container" id="about">
+            <div class="about__container">
+                  <div class="section__title">
+                        <h1 class="about__title">ABOUT ME</h1>
+                  </div>
+                  <div class="user__profile">
+                        <img src="assets/img/profile.png" alt="User Profile" class="img__profile">
+                  </div>
+                  <div class="about__description">
+                        <p class="desc">Hello, i’m Tresna Agustina from Indonesia, I am a student from the University of Technology in Bali, Indonesia. I am 20 years old and I have great interest in web development and web designer</p>
+                  </div>
+                  <div class="button__wrap">
+                        <button class="cv__button">Download CV</button>
+                        <button class="work__button">My Work</button>
+                  </div>
+            </div>
+      </div>
       <!-- Service -->
       <!-- Project -->
       <!-- CTA -->
