@@ -512,7 +512,7 @@ span{
 }
 .about__container{
       width: 80%;
-      height: auto;
+      height: 100vh;
       margin: 4rem auto;
 }
 
