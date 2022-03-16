@@ -305,7 +305,7 @@ span{
 
 .hire__button{
       padding: 12px 18px;
-      background: var(--p_color);
+      background: #cc2b41;
       border: none;
       font-size: var(--h6);
       border-radius: 5px;
@@ -315,7 +315,7 @@ span{
 }
 
 .hire__button:hover{
-      background: #cc2b41;
+      background: var(--p_color);
       padding: 12px 24px;
       transition: .3s ease-in-out;
 }
