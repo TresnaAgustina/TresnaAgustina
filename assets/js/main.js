@@ -2,6 +2,7 @@ const toggle = document.querySelector('.menu__toggle');
 const menu = document.querySelector('.hidden__menu');
 const close = document.querySelector('.fa-circle-xmark');
 const navLink = document.querySelectorAll('.link');
+const navLogo = document.querySelector('.nav__logo');
 
 // running parallax js
 var scene = document.getElementById('scene');
@@ -25,11 +26,16 @@ toggle.onclick = function () {
   }
   navLink.forEach(n => n.addEventListener('click', linkClick))
 
+//   when nav logo click -> close sideBar
+navLogo.onclick = function () {
+      menu.classList.remove('open')
+  }
+
 
 // typer
 var message = ["Front End Developer"];
 var textPositions = 0;
-var speed = 105;
+var speed = 120;
 
 typewriter = () => {
     document.querySelector('#profession').innerHTML = message[0].substring(0, textPositions)
@@ -57,3 +63,6 @@ window.addEventListener("load", typewriter);
     if(this.scrollY >= 200) header.classList.add('scroll-sidebar'); else header.classList.remove('scroll-sidebar')
 }
 window.addEventListener('scroll', scrollSideBar)
+
+
+// make scroll smooth
