@@ -29,7 +29,14 @@ toggle.onclick = function () {
 //   when nav logo click -> close sideBar
 navLogo.onclick = function () {
       menu.classList.remove('open')
-  }
+}
+//  when user click outside the sidebar -> close sidebar
+document.addEventListener('mouseup', function(e) {
+    // var container = document.getElementById('container');
+    if (!menu.contains(e.target)) {
+        menu.classList.remove("open");
+    }
+});
 
 
 // typer

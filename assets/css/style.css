@@ -436,6 +436,7 @@ span{
 }
 
 @media screen and (min-width: 768px) {
+
       .parallax > div.layer{
             width: 35px;
             height: 35px;
@@ -592,6 +593,9 @@ span{
 }
 
 @media screen and (min-width: 768px) {
+      #about{
+            scroll-margin: 8rem;
+      }
       .section__title > h1{
             font-size: var(--h2);
       }
@@ -604,6 +608,9 @@ span{
 }
 
 @media screen and (min-width: 1280px) {
+      #about{
+            scroll-margin: 10rem;
+      }
       .section__title > h1{
             font-size: var(--h1);
       }
