@@ -671,23 +671,25 @@ span{
 .content__wrap{
       width: 80%;
       margin: auto;
-      display: inherit;
-      flex-direction: column;
-      gap: 2rem;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
 }
 
 .service__box{
       min-width: 240px;
       min-height: 220px;
-      border: 1px solid var(--p_color);
+      background: var(--bg_color);
       border-radius: 5px;
+      transition: 1s ease-in;
+      box-shadow: var(--testi_card_shadow);
 }
 
 .box__image{
       width: 70px;
       height: 70px;
-      border: 1px solid var(--p_color);
       border-radius: 50%;
+      background: var(--p_color);
       margin: 24px 0 0 24px;
       display: flex;
       align-items: center;
@@ -695,7 +697,7 @@ span{
 }
 
 .box__image > i{
-      color: var(--p_color);
+      color: var(--bg_color);
       font-size: var(--h4);
 }
 
@@ -708,10 +710,32 @@ span{
       margin-bottom: 10px;
       font-size: var(--h4);
       font-weight: var(--semi);
-      color: var(--t_color);
+      color: var(--p_color);
 }
 
 .box__desc{
-      color:#575757;
+      color: #4d4d4d;
+      font-size: var(--p);
       letter-spacing: 1.2px;
+      line-height: 1.2rem;
+}
+
+.service__box:hover{
+      outline: .5px solid var(--p_color);
+}
+
+
+@media screen and (min-width: 768px) {
+      .content__wrap{
+            grid-template-columns: repeat(2, 1fr);
+            place-content: center;
+      }
+}
+
+@media screen and (min-width: 1280px) {
+      .content__wrap{
+            grid-template-columns: repeat(3, 1fr);
+            place-content: center;
+            gap: 1.5rem;
+      }
 }
