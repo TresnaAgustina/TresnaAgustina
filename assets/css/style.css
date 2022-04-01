@@ -194,12 +194,12 @@ button,input{
       }
 
       .nav__menu{
-            width: 80%;
+            width: 60%;
             height: auto;
             display: inherit;
-            justify-content:center;
+            justify-content: center;
             margin: auto;
-            gap: 3rem;
+            gap: 4rem;
       }
 
       .nav__menu > li > a{
@@ -218,7 +218,7 @@ button,input{
 
 /* Hero */
 #home{
-      scroll-margin: 0;
+      scroll-margin: 6rem;
 }
 .hero__section{
       width: 100%;
@@ -294,14 +294,14 @@ span{
       margin: 38px 0 32px 0;
 }
 
-.social__icon > i{
+.social__icon > a > i{
       color: var(--bg_color);
       text-align: center;
       font-size: var(--h4);
       transition: .3s ease-in-out;
 }
 
-.social__icon > i:hover{
+.social__icon > a > i:hover{
       color: var(--p_color);
       cursor: pointer;
       transition: .3s ease-in-out;
@@ -513,7 +513,7 @@ span{
 
 /* About Me */
 #about{
-      scroll-margin: 6rem;
+      scroll-margin: 8rem;
 }
 .about__container{
       width: 80%;
@@ -521,9 +521,12 @@ span{
       margin: 5rem auto;
 }
 
-.section__title > h1{
+.section__title{
       text-align: center;
-      font-size: var(--h3);
+}
+
+.section__title > h1{
+      font-size: var(--h4);
       color: var(--t_color);
       font-weight: var(--med);
       letter-spacing:2px;
@@ -597,7 +600,7 @@ span{
             scroll-margin: 8rem;
       }
       .section__title > h1{
-            font-size: var(--h2);
+            font-size: var(--h3);
       }
 
       .about__description{
@@ -612,7 +615,7 @@ span{
             scroll-margin: 10rem;
       }
       .section__title > h1{
-            font-size: var(--h1);
+            font-size: var(--h2);
       }
 
       .about__description{
@@ -633,7 +636,7 @@ span{
 
 /* service */
 #service{
-      scroll-margin: 5rem;
+      scroll-margin: 8rem;
 }
 .service__container {
       width: 80%;
@@ -662,7 +665,7 @@ span{
 .section__title > h2{
       text-align: center;
       margin: 12px 0 1.5rem 0;
-      font-size: var(--h3);
+      font-size: var(--h4);
       font-weight: var(--med);
       letter-spacing:2px;
       color: var(--t_color);
@@ -726,16 +729,230 @@ span{
 
 
 @media screen and (min-width: 768px) {
+      #service{
+            scroll-margin: 10rem;
+      }
+
+      .service__container{
+            width: 60%;
+            justify-content: space-between;
+      }
+
+      .section__title > h2{
+            font-size: var(--h3);
+      }
+
       .content__wrap{
             grid-template-columns: repeat(2, 1fr);
             place-content: center;
       }
+      .box__desc{
+            font-size: var(--h6);
+      }
 }
 
 @media screen and (min-width: 1280px) {
+      .section__title > h2{
+            font-size: var(--h2);
+      }
+
       .content__wrap{
             grid-template-columns: repeat(3, 1fr);
             place-content: center;
             gap: 1.5rem;
       }
+
+      .box__desc{
+            font-size: var(--h5);
+      }
+}
+
+/* Project */
+#project{
+      scroll-margin: 8rem;
+}
+.project__container{
+      width: 90%;
+      height: auto;
+      margin: 0 auto 10rem auto;
+}
+
+.sub__title{
+      margin-top: -20px;
+      font-size: var(--p);
+      color: #4d4d4d;
+      letter-spacing: 2px;
+}
+
+.menu__btn{
+      margin: 2rem auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+
+.menu__list{
+      border: none;
+      outline: none;
+      stroke: none;
+      background: none;
+      padding: 8px 20px;
+      cursor: pointer;
+}
+
+.bordered{
+      border-right: 1px solid var(--p_color);
+      border-left: 1px solid var(--p_color);
+}
+
+.bordered1{
+      border-right: 1px solid var(--p_color);
+}
+
+
+.menu__list:hover{
+      color: var(--p_color);
+}
+
+.project__wrap{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      place-items: center;
+      gap: 1.2rem;
+}
+
+.project__box.show {
+      display: flex;
+      transition: .3s ease-in-out;
+}
+
+.project__box{
+      min-width: 280px;
+      height: 210px;
+      background: var(--bg_color);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      box-shadow: var(--project_card_shadow);
+      transition: .3s ease-in-out;
+}
+
+.demo__btn{
+      position: absolute;
+      padding: 12px 18px;
+      background: var(--p_color);
+      border-radius: 5px;
+      color: var(--bg_color);
+      letter-spacing: 2px;
+      display: none;
+}
+
+
+.project__box::before{
+      content: "";
+      position: absolute;
+      min-width: 280px;
+      height: 210px;
+      background: rgba(49, 39, 86, 0.5);
+      backdrop-filter: blur(2px);
+      border-radius: 5px;
+      display: none
+}
+
+.project__box:hover .demo__btn , .project__box:hover::before{
+      display: block;
+      transition: 3s linear ease-in-out;
+}
+
+
+.menu__list.active{
+      color: var(--p_color);
+}
+    
+.project__box > img{
+      width: auto;
+      height: 80%;
+      object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+      #project{
+            scroll-margin: 10rem;
+      }
+
+      .project__container{
+            width: 60%;
+      }
+      
+      .project__wrap{
+            grid-template-columns: repeat(2,1fr);
+      }
+}
+
+@media screen and (min-width: 1280px) {
+      .project__wrap{
+            grid-template-columns: repeat(3,1fr);
+      }
+}
+
+
+/* CTA */
+.cta__container{
+      width: 90%;
+      height: 70px;
+      margin: auto;
+      background: var(--hbg_color);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 10rem auto;
+}
+
+.contents__wrap{
+      max-width: 90%;
+      /* padding: 0 8px; */
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.cta__text{
+      font-size: var(--h5);
+      margin-right: 12px;
+      color: var(--bg_color);
+}
+
+.btn__wrapper{
+      display: inherit;
+}
+
+div.btn__wrapper > button{
+      width: 80px;
+      height: 40px;
+      border-radius: 5px;
+}
+
+.hire__btn{
+      background: var(--p_color);
+      border: none;
+      outline: none;
+      font-size: var(--p);
+      margin-right: 8px;
+}
+
+.hire__btn > a{
+      color: var(--bg_color);
+}
+
+.project__btn{
+      background: none;
+      font-size: var(--p);
+      border: 1px solid var(--p_color);
+}
+
+.project__btn > a{
+      color: var(--bg_color);
 }

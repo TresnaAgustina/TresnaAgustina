@@ -29,7 +29,7 @@
                               <li class="nav__list"><a href="#home">Home</a></li>
                               <li class="nav__list"><a href="#about">About</a></li>
                               <li class="nav__list"><a href="#service">Service</a></li>
-                              <li class="nav__list"><a href="#">Project</a></li>
+                              <li class="nav__list"><a href="#project">Project</a></li>
                               <li class="nav__list"><a href="#">Contact</a></li>
                         </div>
                   </div>
@@ -46,7 +46,7 @@
                                     <li class="nav__link"><a href="#home" class="link">Home</a></li>
                                     <li class="nav__link"><a href="#about" class="link">About</a></li>
                                     <li class="nav__link"><a href="#service" class="link">Service</a></li>
-                                    <li class="nav__link"><a href="#" class="link">Project</a></li>
+                                    <li class="nav__link"><a href="#project" class="link">Project</a></li>
                                     <li class="nav__link"><a href="#" class="link">Contact</a></li>
                               </ul>
                         </div>
@@ -67,11 +67,11 @@
                               <p class="profession span" id="profession"></p>
                               </div>
                               <div class="social__icon">
-                                    <i class="fa-brands fa-github sosmed__icon"></i>
-                                    <i class="fa-brands fa-linkedin-in sosmed__icon"></i>
-                                    <i class="fa-brands fa-dribbble sosmed__icon"></i>
-                                    <i class="fa-brands fa-instagram sosmed__icon"></i>
-                                    <i class="fa-brands fa-twitter sosmed__icon"></i>
+                                    <a href="https://github.com/TresnaAgustina" class="sosLink" target="blank"><i class="fa-brands fa-github sosmed__icon"></i></a>
+                                    <a href="https://www.linkedin.com/in/tresna-agustina-586a34210/" class="sosLink" target="blank"><i class="fa-brands fa-linkedin-in sosmed__icon"></i></a>
+                                    <a href="https://dribbble.com/TresnaAgustina" class="sosLink" target="blank"><i class="fa-brands fa-dribbble sosmed__icon"></i></a>
+                                    <a href="https://www.instagram.com/tresna_agustina/" class="sosLink" target="blank"><i class="fa-brands fa-instagram sosmed__icon"></i></a>
+                                    <a href="https://twitter.com/agustina_tresna" class="sosLink" target="blank"><i class="fa-brands fa-twitter sosmed__icon"></i></a>
                               </div>
                         </div>
                         <div class="hero__button">
@@ -93,7 +93,7 @@
             </div>
       </section>
       <!-- About -->
-      <div class="container" id="about">
+      <section class="container" id="about">
             <div class="about__container" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="400">
                   <div class="section__title">
                         <h1 class="about__title">ABOUT ME</h1>
@@ -109,15 +109,15 @@
                         <button class="work__button">My Work</button>
                   </div>
             </div>
-      </div>
+      </section>
       <!-- Service -->
-      <div class="container" id="service">
+      <section class="container" id="service">
             <div class="service__container">
                   <div class="section__category">
                         <h6 class="cateory">#Services</h6>
                   </div>
 
-                  <div class="section__title">
+                  <div class="section__title services">
                         <h2 class="title">My Provided Features</h2>
                   </div>
 
@@ -126,7 +126,7 @@
                               <div class="box__image"><i class="fas fa-laptop-code"></i></div>
                               <div class="box__content">
                                     <h2 class="box__title">Web Development</h2>
-                                    <p class="box__desc">create an attractive and responsive website for various devices.</p>
+                                    <p class="box__desc">create an interactive, modern, responsive website for various devices and apply the concept of seo.</p>
                               </div>
                         </article>
 
@@ -147,11 +147,74 @@
                         </article>
                   </div>
             </div>
-      </div>
+      </section>
       <!-- Project -->
+      <section class="container" id="project">
+            <div class="project__container">
+                  <div class="section__category">
+                        <h6 class="cateory">#Project</h6>
+                  </div>
+
+                  <div class="section__title">
+                        <h2 class="title">Recent Work</h2>
+                        <p class="sub__title">projects i have worked on</p>
+                  </div>
+
+                  <div class="menu__btn" id="btn__container">
+                        <button class="menu__list active all" onclick="filterSelection('all')">Show All</button>
+                        <button class="menu__list bordered web_dev" onclick="filterSelection('webDev')">Web Dev</button>
+                        <button class="menu__list bordered1 ui_design" onclick="filterSelection('uiDesign')">UI Design</button>
+                        <button class="menu__list app_design" onclick="filterSelection('appDesign')">App Design</button>
+                  </div> 
+
+                  <div class="project__wrap">
+                        <div class="project__box appDesign">
+                              <img src="assets/img/ProjectImage01.png" alt="Project Image" class="project__img">
+                              <a href="#" class="demo__btn"><i class="fas fa-browser"></i> DEMO</a>
+                        </div>
+                        <div class="project__box webDev">
+                              <img src="assets/img/ProjectImage02.png" alt="Project Image" class="project__img">
+                              <a href="#" class="demo__btn"><i class="fas fa-browser"></i> DEMO</a>
+                        </div>
+                        <div class="project__box uiDesign">
+                              <img src="assets/img/ProjectImage03.png" alt="Project Image" class="project__img">
+                              <a href="#" class="demo__btn"><i class="fas fa-browser"></i> DEMO</a>
+                        </div>
+                        <div class="project__box uiDesign">
+                              <img src="assets/img/ProjectImage04.png" alt="Project Image" class="project__img">
+                              <a href="#" class="demo__btn"><i class="fas fa-browser"></i> DEMO</a>
+                        </div>
+                        <div class="project__box uiDesign">
+                              <img src="assets/img/ProjectImage05.png" alt="Project Image" class="project__img">
+                              <a href="#" class="demo__btn"><i class="fas fa-browser"></i> DEMO</a>
+                        </div>
+                        <div class="project__box appDesign">
+                              <img src="assets/img/ProjectImage06.png" alt="Project Image" class="project__img">
+                              <a href="#" class="demo__btn"><i class="fas fa-browser"></i> DEMO</a>
+                        </div>
+                  </div>
+            </div>
+      </section>
+
       <!-- CTA -->
+      <section class="container">
+            <div class="cta__container">
+                  <div class="contents__wrap">
+                        <h1 class="cta__text">Interest Working With Me?</h1>
+                        <div class="btn__wrapper">
+                              <button class="hire__btn"><a href="#" class="hire__link">Hire Me</a></button>
+                              <button class="project__btn"><a href="#" class="project__link">My Work</a></button>
+                        </div>
+                  </div>
+            </div>
+      </section>
       <!-- Testi -->
       <!-- Contact -->
+      <section class="container">
+            <div class="contact__container">
+
+            </div>
+      </section>
       <!-- Footer -->
 
 <!-- my js -->
